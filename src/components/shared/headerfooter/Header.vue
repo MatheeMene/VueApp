@@ -3,9 +3,9 @@
     <div class="nav-left">
       <h2 class="titulo-nav">   Vue Brabo</h2>
       <ul class="nav-list">
-        <li> Content1</li>
-        <li> Content1</li>
-        <li> Content1</li>
+        <li><a> Content1</a></li>
+        <li><a> Content1</a></li>
+        <li><a> Content1</a></li>
       </ul>
     </div>
 
