@@ -8,6 +8,8 @@
           <img class="img-responsive" :src="link.image" :alt="link.title">
           <div class="card">
             <h3 class="image-title"> {{ link.title }} </h3>
+            <hr>
+            <p class="subtitle-image"> {{ link.description }} </p>
           </div>
         </li>
       </ul>
@@ -39,10 +41,12 @@
 <style>
   @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
   body, html {  
     font-family: 'Titillium Web', sans-serif;
     background-color: #292b2f;
+    height: 110%;
   }
   .principal-content {
     margin-left: 23%;
@@ -68,6 +72,7 @@
   .list-itens {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -2%;
   }
   .itens {
     width: 20%;
@@ -86,8 +91,8 @@
   }
   .card {
     background-color: rgba(40, 40, 40, .98);
-    padding-bottom: 2em;
     border-radius: 5px;
+    padding-bottom: 3%;
   }
   .card .image-title {
     color: #41b883;
@@ -95,6 +100,17 @@
     font-family: 'Muli', sans-serif;
     font-size: .9em;
     text-align: center;
+  }
+  .subtitle-image {
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    font-size: .9em;
+    max-width: 20ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 8%;
   }
 
 </style>
